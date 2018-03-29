@@ -101,8 +101,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	var FluxContainerSubscripts = __webpack_require__(2);
-	// const {Component} = require('react')
-	// const shallowEqual = require('shallowEqual')
 
 	var DEFAULT_OPTIONS = {
 	    pure: true,
@@ -201,7 +199,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// import FluxStore from 'FluxStore'
 	'use strict';
 
 	function _classCallCheck(instance, Constructor) {
@@ -321,8 +318,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 3 */
 /***/ (function(module, exports) {
 
-	// import Dispatcher from 'Dispatcher'
-	// import FluxStore from 'FluxStore'
 	"use strict";
 
 	function _classCallCheck(instance, Constructor) {
@@ -371,7 +366,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// import Dispatcher from 'Dispatcher'
 	'use strict';
 
 	function _classCallCheck(instance, Constructor) {
@@ -460,7 +454,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// import Dispatcher from 'Dispatcher'
 	// TODO 用 nodejs eventemitter 进行测试
 	// !!!!!!!!!!!! 更新 addListener 中的 on 为 addListener
 	'use strict';
@@ -474,9 +467,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _require = __webpack_require__(6);
 
 	var EventEmitter = _require.EventEmitter;
-
-	// const Events = require('events')
-	// class EventEmitter extends Events { }
 
 	// FluxReduceStore 的 基类
 	// 核心就是初始化时将 FluxReduceStore 的 _onDispatch 注册到 dispatcher
