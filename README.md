@@ -1,4 +1,4 @@
-
+# 一种 Flux 实现
 
 ### Dispatch
 - register
