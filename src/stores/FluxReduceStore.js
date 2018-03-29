@@ -1,6 +1,4 @@
-
-const FluxStore = require('./FluxStore')
-import Dispatcher from '../Dispatcher'
+const FluxStore = require('FluxStore')
 // Store 的基类
 // 核心就是 _onDispatch 方法, 该方法将注册到 dispatcher
 // 在 dispatch 之后, onDispatch 将调用 reduce 更新状态, 并触发 store change 事件

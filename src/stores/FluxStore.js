@@ -1,10 +1,6 @@
-import Dispatcher from '../Dispatcher'
 // TODO 用 nodejs eventemitter 进行测试
 // !!!!!!!!!!!! 更新 addListener 中的 on 为 addListener
 const {EventEmitter} = require('fbemitter')
-// const Events = require('events')
-// class EventEmitter extends Events { }
-
 
 // FluxReduceStore 的 基类
 // 核心就是初始化时将 FluxReduceStore 的 _onDispatch 注册到 dispatcher

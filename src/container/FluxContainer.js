@@ -1,8 +1,5 @@
 
-// import FluxStore from 'FluxStore'
-const FluxContainerSubscripts = require('./FluxContainerSubscriptions')
-const {Component} = require('react')
-const shallowEqual = require('shallowEqual')
+const FluxContainerSubscripts = require('FluxContainerSubscriptions')
 
 const DEFAULT_OPTIONS = {
     pure: true,
@@ -90,6 +87,6 @@ function create(Base, options={}) {
     
 }
 
-module.exports = create
+module.exports = {create, }
 
 

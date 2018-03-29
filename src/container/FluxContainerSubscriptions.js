@@ -1,6 +1,4 @@
-import FluxStore from '../stores/FluxStore'
-
-const FluxStoreGroup = require('../FluxStoreGroup')
+const FluxStoreGroup = require('FluxStoreGroup')
 
 function shallowArrayEqual(a, b) {
     if(a === b) {
