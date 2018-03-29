@@ -71,21 +71,3 @@ class FluxStore {
 }
 
 module.exports = FluxStore
-
-
-if(require.main === module)  {
-    const Dispatcher = require('../Dispatcher')
-    const d = new Dispatcher()
-    const log = console.log
-    
-    const testEmitter = () => {
-        const fluxStore = new FluxStore(d)
-        fluxStore.addListener(() => {
-            log('callback store change')
-        })
-        
-        fluxStore.__emitChange()
-    }
-    
-    testEmitter()
-}
