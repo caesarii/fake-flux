@@ -95,13 +95,13 @@ gulp.task('lib', function () {
       .pipe(gulp.dest(paths.lib))
 })
 
-gulp.task('flow', function () {
-    return gulp
-      .src(paths.src)
-      .pipe(flatten())
-      .pipe(rename({ extname: '.js.flow' }))
-      .pipe(gulp.dest(paths.lib))
-})
+// gulp.task('flow', function () {
+//     return gulp
+//       .src(paths.src)
+//       .pipe(flatten())
+//       .pipe(rename({ extname: '.js.flow' }))
+//       .pipe(gulp.dest(paths.lib))
+// })
 
 gulp.task('dist', ['lib'], function () {
     const distOpts = {
@@ -163,12 +163,14 @@ gulp.task('dist:utils:min', ['lib'], function () {
       .pipe(gulp.dest(paths.dist))
 })
 
-gulp.task('build', ['lib', 'flow', 'dist', 'dist:utils'])
 
+// delete flow
+gulp.task('build', ['lib', 'dist', 'dist:utils'])
+
+// delete flow
 gulp.task('publish', function (cb) {
     runSequence(
       'clean',
-      'flow',
       ['dist', 'dist:min', 'dist:utils', 'dist:utils:min'],
       cb
     )
