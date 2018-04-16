@@ -15,3 +15,60 @@ store 的功能: emit change when dispatch, add listener for change event
 
 
 
+### Dispatch
+
+```
+const dispatch = {
+    _callbacks = [],
+
+    register(callback) {
+        _callbacks.push(callback)
+    }
+
+    dispatch(payload) {
+        _callback[type].forEach(callback => {callback(payload)})
+    }
+}
+```
+
+### store
+
+class Store {
+    constructor() {
+        this._state = this.getInitialState()
+        dispatch.register(this.reduce)
+    }
+
+    getInitialState() {
+
+    }
+
+    getState() {
+        return this._state
+    }
+
+    reduce(state, action) {
+        const newState = state
+
+        // ...
+
+        return newState
+    }
+}
+
+#### container
+class View exends React.component {
+    getStores() {
+
+    }
+
+    calculateState() {
+
+    }
+
+}
+
+### create
+function create() {
+
+}
